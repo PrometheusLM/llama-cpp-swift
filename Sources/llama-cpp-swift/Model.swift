@@ -4,7 +4,7 @@ import llama
 
 public final class Model {
   private let logger = Logger.llama
-  let model: OpaquePointer
+  public let model: OpaquePointer
   let context: OpaquePointer
 
   public init(modelPath: String, contextSize: UInt32 = 2048) throws {
