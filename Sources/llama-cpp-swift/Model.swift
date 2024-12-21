@@ -10,6 +10,7 @@ public final class Model {
   public init(modelPath: String, contextSize: UInt32 = 2048) throws {
     llama_backend_init()
     var modelParams = llama_model_default_params()
+    modelParams.use_mmap = false
 
     #if targetEnvironment(simulator)
       modelParams.n_gpu_layers = 0
