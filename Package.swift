@@ -16,7 +16,7 @@ let package = Package(
             targets: ["LLamaSwift"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ggerganov/llama.cpp", revision: "a89f75e1b7b90cb2d4d4c52ca53ef9e9b466aa45"),
+        .package(url: "git@github.com:PrometheusLM/llama.cpp.git", revision: "4c521ecf3a4a47876681e189592574ea357d5d5b"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.6.1"),
     ],
     targets: [
